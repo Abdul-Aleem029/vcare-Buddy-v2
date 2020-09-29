@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.7",
+  "id": "f1a26cd2-4bc7-4ddb-94ac-e3c36b8143fa",
+  "version": "1.0",
+  "packageName": "vCare-Buddy/src",
+  "developer": {
+    "name": "Abdul Aleem, Mohammed",
+    "websiteUrl": "https://www.teams.com/",
+    "privacyUrl": "https://www.teams.com/privacy",
+    "termsOfUseUrl": "https://www.teams.com/termsofuse"
+  },
+  "name": {
+    "short": "vCare Buddy",
+    "full": "vCare Buddy"
+  },
+  "description": {
+    "short": "vCare Buddy",
+    "full": "This is a buddy application"
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "mentorTab",
+      "name": "Mentor",
+      "contentUrl": "https://eba8b5bd9e92.ngrok.io/mentor.html",
+      "websiteUrl": "https://eba8b5bd9e92.ngrok.io/mentor.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "f1a26cd2-4bc7-4ddb-94ac-e3c36b8143fa",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "MentionMe",
+              "description": "Sends message with @mention of the sender"
+            },
+            {
+              "title": "FillTimesheet",
+              "description": "Sends message with @mention of the sender"
+            },
+            {
+              "title": "ApplyLeave",
+              "description": "Sends message with @mention of the sender"
+            },
+            {
+              "title": "Help",
+              "description": "Sends message with @mention of the sender"
+            }
+          ]
+        },
+        {
+          "scopes": [
+            "team"
+          ],
+          "commands": [
+            {
+              "title": "MentionMe",
+              "description": "Sends message with @mention of the sender"
+            }
+          ]
+        }
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "https://eba8b5bd9e92.ngrok.io/mentor.html"
+  ],
+  "showLoadingIndicator": false
+}

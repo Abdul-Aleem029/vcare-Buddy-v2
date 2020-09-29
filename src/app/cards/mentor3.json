@@ -1,0 +1,39 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "size": 3,
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://vcarebuddy.blob.core.windows.net/$web/person.png"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "weight": "bolder",
+                            "text": "A Aleem"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Mentored 29 Members"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Connect",
+            "value": "https://teams.microsoft.com/l/chat/0/0?users=praveenpl%40outlook.com"
+        }
+    ]
+}

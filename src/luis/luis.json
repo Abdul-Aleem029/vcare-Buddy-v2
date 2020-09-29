@@ -1,0 +1,73 @@
+{
+    "luis_schema_version": "7.0.0",
+    "intents": [
+        {
+            "name": "Apply Leaves",
+            "features": []
+        },
+        {
+            "name": "None",
+            "features": []
+        }
+    ],
+    "entities": [],
+    "hierarchicals": [],
+    "composites": [],
+    "closedLists": [
+        {
+            "name": "Date",
+            "subLists": [
+                {
+                    "canonicalForm": "date",
+                    "list": [
+                        "day"
+                    ]
+                }
+            ],
+            "roles": []
+        },
+        {
+            "name": "Leave",
+            "subLists": [
+                {
+                    "canonicalForm": "taking off",
+                    "list": [
+                        "Leave",
+                        " Not Available",
+                        " off"
+                    ]
+                }
+            ],
+            "roles": []
+        }
+    ],
+    "prebuiltEntities": [],
+    "utterances": [
+        {
+            "text": "i'm goiing to take off on date",
+            "intent": "Apply Leaves",
+            "entities": []
+        },
+        {
+            "text": "please apply leave on date",
+            "intent": "Apply Leaves",
+            "entities": []
+        },
+        {
+            "text": "taking off on date",
+            "intent": "Apply Leaves",
+            "entities": []
+        }
+    ],
+    "versionId": "0.1",
+    "name": "Fill Time Sheets",
+    "desc": "Fillinf time sheets resource",
+    "culture": "en-us",
+    "tokenizerVersion": "1.0.0",
+    "patternAnyEntities": [],
+    "regex_entities": [],
+    "phraselists": [],
+    "regex_features": [],
+    "patterns": [],
+    "settings": []
+}
